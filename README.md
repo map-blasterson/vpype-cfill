@@ -8,7 +8,7 @@ A [vpype](https://github.com/abey79/vpype) extension for generating concentric f
 
 ### From PyPI
 
-PiPI package: [https://pypi.org/project/vpype-cfill/](https://pypi.org/project/vpype-cfill/)
+PyPI package: [https://pypi.org/project/vpype-cfill/](https://pypi.org/project/vpype-cfill/)
 
 ```
 pip install vpype-cfill
