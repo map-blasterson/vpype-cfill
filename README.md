@@ -40,7 +40,7 @@ vpype rect 0 0 50 50 cfill --pen-width 0.5mm show
 
 
 # Process complex shapes from SVG
-vpype read complex_shape.svg linesort cfill -pw 1.2mm linesimplify --tolerance 0.05mmlinesimplify --tolerance 0.05mm  write filled_output.svg
+vpype read complex_shape.svg linesort cfill -pw 1.2mm linesimplify --tolerance 0.05mm write filled_output.svg
 ```
 
 ## License
