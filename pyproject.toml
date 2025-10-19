@@ -1,0 +1,47 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "vpype-cfill"
+version = "0.1.0"
+description = "A vpype extension for generating concentric fill patterns"
+authors = [{name = "Map Blasterson", email = "m@blaster.mbelt.net"}]
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = [
+    "vpype>=1.9",
+    "click",
+    "numpy>=1.19.0",
+    "shapely>=1.7.0",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Windows",
+    "Operating System :: MacOS",
+    "Programming Language :: Rust",
+    "Topic :: Multimedia :: Graphics :: Editors :: Graphics Conversion",
+    "Topics :: Multimedia :: Graphics :: Vector-Based"
+]
+
+[project.urls]
+Homepage = "https://github.com/map-blasterson/vpype-cfill"
+Repository = "https://github.com/map-blasterson/vpype-cfill"
+
+[project.entry-points."vpype.plugins"]
+cfill = "vpype_cfill:cfill"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+python-source = "."
+module-name = "vpype_cfill.vpype_cfill_rust"

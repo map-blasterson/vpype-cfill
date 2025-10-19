@@ -1,0 +1,15 @@
+# Include additional files in source distribution
+include README.md
+include LICENSE
+include Cargo.toml
+include pyproject.toml
+include build.sh
+include scripts/package_pypi.sh
+include scripts/package_for_pypi.py
+recursive-include src *.rs
+recursive-include vpype_cfill *.py
+recursive-include tests *.py
+recursive-include svg *.svg
+global-exclude __pycache__
+global-exclude *.py[co]
+global-exclude .DS_Store

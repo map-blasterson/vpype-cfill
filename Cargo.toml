@@ -1,0 +1,27 @@
+[package]
+name = "vpype-cfill"
+version = "0.1.0"
+edition = "2021"
+description = "A vpype extension for generating concentric fill patterns using Rust"
+license = "MIT"
+repository = "https://github.com/map-blasterson/vpype-cfill"
+homepage = "https://github.com/map-blasterson/vpype-cfill"
+documentation = "https://github.com/map-blasterson/vpype-cfill"
+keywords = ["vpype", "svg", "fill", "patterns", "graphics"]
+categories = ["graphics", "visualization"]
+
+[lib]
+name = "vpype_cfill"
+crate-type = ["cdylib"]
+
+[dependencies]
+geo = "0.31"
+geo-types = "0.7"
+pyo3 = { version = "0.26", features = ["extension-module", "generate-import-lib"] }
+numpy = "0.26"
+anyhow = "1.0"
+clap = { version = "4.0", features = ["derive"] }
+rayon = "1.8"
+
+[build-dependencies]
+pyo3-build-config = "0.26"
