@@ -6,6 +6,16 @@ A [vpype](https://github.com/abey79/vpype) extension for generating concentric f
 
 ## Installation
 
+### From PyPI
+
+PiPI package: [https://pypi.org/project/vpype-cfill/](https://pypi.org/project/vpype-cfill/)
+
+```
+pip install vpype-cfill
+```
+
+### From Source
+
 ```bash
 python -m venv env
 . env/bin/activate
