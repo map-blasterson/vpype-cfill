@@ -27,10 +27,10 @@ vpype read input.svg cfill -pw 0.125in write output.svg
 ### Command Line Arguments
 
 - `-pw, --pen-width FLOAT`: Width of pen/spacing between concentric lines (default: 1.0)
--  '-fh', '--fill-holes': Fill holes in polygons instead of preserving them
--  '-dh', '--discard-hole-borders': Discard original hole border geometry (independent of --fill-holes)
--  '-de', '--discard-exterior': Discard original exterior geometry. Combine with --discard-hole-borders to generate only fill.
--  '-r', '--reverse-ring-draw-order': Draw inner-most ring first, then move outwards to edges. (avoid ink pools)
+-  `'-fh', '--fill-holes'`: Fill holes in polygons instead of preserving them
+-  `'-dh', '--discard-hole-borders'`: Discard original hole border geometry (independent of --fill-holes)
+-  `'-de', '--discard-exterior'`: Discard original exterior geometry. Combine with --discard-hole-borders to generate only fill.
+-  `'-r', '--reverse-ring-draw-order'`: Draw inner-most ring first, then move outwards to edges. (avoid ink pools)
 
 ### Examples
 
