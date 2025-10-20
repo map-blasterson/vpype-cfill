@@ -26,7 +26,6 @@ pub fn generate_concentric_fill_concurrent(
     
     // Clean the multipolygon first
     let cleaned_multi = clean_multipolygon(multipolygon)?;
-    println!("Finished cleaning geometry, processing {} polygons", cleaned_multi.0.len());
     
     let results: Result<Vec<_>, _> =
         cleaned_multi.0
