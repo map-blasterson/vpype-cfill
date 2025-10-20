@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "vpype-cfill"
-version = "0.1.0"
+version = "0.1.1"
 description = "A vpype extension for generating concentric fill patterns"
 authors = [{name = "Map Blasterson", email = "m@blaster.mbelt.net"}]
 license = {text = "MIT"}
